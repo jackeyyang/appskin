@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+$baseFontFamily: '宋体','Microsoft Yahei',\5b8b\4f53, arial,sans-serif;
+$sysFontFamily: "Microsoft Yahei", "Hiragino Sans GB", arial, \5b8b\4f53, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+$baseFontSize: 14px;
+$baseFontColor: #000;
+
+// z-index 全局变量
+$topIndex: 9999;
+$pageIndex:999;
+$domIndex:99;
+
+// 透明处理
+@mixin opacity($opacity: 0.5, $filter: true) {
+  $filterOpacity: 100 * $opacity;
+  opacity: $opacity;
+  @if $filter {
+    filter: alpha(opacity = $filterOpacity);
+  }
+}
+//
+@mixin bgcolor-rgba($bgcolor: rgba(0,0,0,.5), $filter: true){
+  @if $filter {
+    background-color:$bgcolor;
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#{ie-hex-str($bgcolor)}', endColorstr='#{ie-hex-str($bgcolor)}');
+    :root & {
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled='false');
+    }
+  }@else {
+    background-color: rgb(red($bgcolor), green($bgcolor), blue($bgcolor));
+    background-color:$bgcolor;
+  }
+}
+
+// 内联块
+@mixin inline-block{
+  zoom: 1;
+  display: inline-block;
+  *display: inline;
+}
+
+// 超出盒子宽度显示省略号
+@mixin ellipsis{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+// 垂直直线虚线
+@mixin hline{
+  @include inline-block;
+  width: 1px;
+  font-size: 0px;
+}
+// 水平直线虚线
+@mixin vline{
+  display: block;
+  height: 1px;
+  font-size: 0px;
+}
+
+// btn:hover
+@mixin btn-over{
+  border: 1px solid transparent;
+  &:hover{
+    border: 1px solid #2d96ff;
+    background: #e7f3ff;
+  }
+}
+
+// clearfix
+@mixin clearfix{
+  clear: both;
+  zoom: 1;
+  &:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    overflow:hidden;
+  }
+}
+
+
