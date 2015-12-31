@@ -14,6 +14,7 @@
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
+      <option name="passParentEnvs" value="true" />
       <option name="program" value="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby/" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
