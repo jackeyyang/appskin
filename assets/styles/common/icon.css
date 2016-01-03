@@ -15,6 +15,31 @@
     height:18px;
 }
 
+.icon-sm{
+    overflow: hidden;
+    width: 28px;
+    height: 28px;
+}
+
 .icon-search{
     background-position: 0 0;
+}
+
+.icon-heart.on{
+    background-position: -18px 0;
+}
+.icon-heart{
+    background-position: -36px 0;
+}
+.icon-home{
+    background: #eee;
+}
+.icon-category{
+    background: #eee;
+}
+.icon-cart{
+    background: #eee;
+}
+.icon-account{
+    background: #eee;
 }
