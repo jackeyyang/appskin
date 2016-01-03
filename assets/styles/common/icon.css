@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.icon{
+    zoom: 1;
+    display: inline-block;
+    *display: inline;
+    background-image: url("../../images/icon-sprite.png");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.icon-xs{
+    overflow: hidden;
+    width: 18px;
+    height:18px;
+}
+
+.icon-search{
+    background-position: 0 0;
+}
