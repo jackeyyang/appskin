@@ -1,0 +1,203 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+/*reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+em, strong, i {
+    font-style: normal;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+input, button, textarea, select, optgroup, option {
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    outline: 0;
+}
+
+select, input, label, button, button img, img {
+    vertical-align: middle;
+}
+
+input, button, textarea, img {
+    line-height: normal;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*global*/
+body{
+    font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti;
+    font-size: 14px;
+}
+.bg-m{
+    background-color: #ec652a;
+}
+.bg-b{
+    background-color: #ddd;
+}
+.bg-c{
+    background-color: #ececec;
+}
+/*默认链接*/
+a{
+    text-decoration: none;
+    outline:none;
+    -moz-outline:none;
+    color:#000;
+    star:expression(this.onFocus=this.blur()); /* for Ie*/
+}
+img{
+    border: 0;
+}
+a:hover,a:active,a:focus,button:hover,button:active,button:focus{
+    text-decoration: none;
+    outline:none;
+    -moz-outline:none;
+}
+button{
+    cursor: pointer;
+    star:expression(this.onFocus=this.blur());
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+}
+/*字体内容对齐*/
+.text-left{ text-align: left!important;}
+.text-center{ text-align: center!important;}
+.text-right{ text-align: right!important;}
+
+.fl{ display: inline; float: left;!important}
+.fr{ display: inline; float: right;!important}
+.img-responsive{ display: block; width: 100%}
+
+/*row*/
+.row{
+    padding: 0 8px;
+    min-width: 320px;
+}
+
+.auto-w{
+    width: auto!important;
+}
+
+/*内联块*/
+.ilbk{
+    zoom: 1;
+    display: inline-block;
+    *display: inline;
+}
+
+/*超出盒子宽度显示省略号*/
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*垂直直线虚线*/
+.hline {
+    zoom: 1;
+    display: inline-block;
+    *display: inline;
+    width: 1px;
+    font-size: 0px;
+}
+
+/*水平直线虚线*/
+.vline {
+    display: block;
+    height: 1px;
+    font-size: 0px;
+}
+
+/*clearfix*/
+.clearfix {
+    clear: both;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+/*inline-form-group*/
+.form-control input{
+    border: 1px solid #ccc;
+}
+.inline-form-group .form-control input{
+    width: 100%;
+}
+.inline-form-group .form-control{
+    overflow: hidden;
+}
+
+/*product list*/
+.box-shadow{
+    background: #fff;
+    margin-bottom: 12px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+/*nav-footer*/
+.nav-footer{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    min-width: 320px;
+    background: #fff;
+    border-top: 2px solid #e96327;
+}
+.nav-footer a{
+    overflow: hidden;
+    zoom: 1;
+    display: inline-block;
+    *display: inline;
+    width: 25%;
+    height: 60px;
+    text-align: center;
+    color: #7a7f83;
+    margin-left: -3px;
+}
+.nav-footer a i{
+    margin-top: 10px;
+}
+.nav-footer a span{
+    display: block;
+}
+.nav-footer .on{
+    color: #ec652a;
+}
