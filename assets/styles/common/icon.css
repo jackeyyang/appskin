@@ -21,6 +21,12 @@
     height: 28px;
 }
 
+.icon-md{
+    overflow: hidden;
+    width: 38px;
+    height: 38px;
+}
+
 .icon-search{
     background-position: 0 0;
 }
@@ -41,5 +47,8 @@
     background: #eee;
 }
 .icon-account{
+    background: #eee;
+}
+.icon-star{
     background: #eee;
 }
