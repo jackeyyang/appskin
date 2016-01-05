@@ -69,6 +69,7 @@
 }
 .category-top-search .form-control .search-key{
     font-size: 14px;
+    width: 100%;
     height: 35px;
     padding-left: 40px;
     text-align: left;
@@ -91,6 +92,24 @@
 /*list-con*/
 .list-con{
     position: relative;
+    top: 62px;
+    z-index: 1;
     margin-left: 105px;
     padding-bottom: 10px;
+}
+.list-con ul{
+    padding-bottom: 70px;
+}
+.list-con li{
+    float: left;
+    display: list-item;
+    margin: 0 8% 12px 0;
+    width: 42%;
+    text-align: center;
+}
+.list-con li a span{
+    display: block;
+}
+.list-con .p-price{
+    color: #ec652a;
 }

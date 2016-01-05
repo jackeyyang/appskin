@@ -30,6 +30,7 @@ caption, th {
 }
 
 input, button, textarea, select, optgroup, option {
+    font-family: Microsoft Yahei,Hiragino Sans GB,arial,\5b8b\4f53,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
     font-size: inherit;
     font-style: inherit;
     font-weight: inherit;
@@ -52,7 +53,7 @@ p {
 }
 /*global*/
 body{
-    font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti;
+    font-family: Microsoft Yahei,Hiragino Sans GB,arial,\5b8b\4f53,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
     font-size: 14px;
 }
 .bg-m{
@@ -184,14 +185,11 @@ button{
 }
 .nav-footer a{
     overflow: hidden;
-    zoom: 1;
-    display: inline-block;
-    *display: inline;
+    float: left;
     width: 25%;
     height: 60px;
     text-align: center;
     color: #7a7f83;
-    margin-left: -3px;
 }
 .nav-footer a i{
     margin-top: 10px;
