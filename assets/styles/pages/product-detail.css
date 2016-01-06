@@ -47,11 +47,90 @@
 .detail-item-group{
     padding: 10px 0 5px;
     border-top: 1px dashed #ccc;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.4;
 }
 .detail-item-group span{
     display: block;
     margin-bottom: 10px;
-    color: #999;
-    font-size: 14px;
-    line-height: 1.4;
+}
+.detail-item-group .qty{
+    position: relative;
+    top: 0;
+    left:0;
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+}
+.detail-item-group .icon-minus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.detail-item-group .icon-add{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.detail-item-group .form-control{
+    padding: 0 28px;
+}
+.detail-item-group .form-control input{
+    height: 28px;
+    line-height: 28px;
+    vertical-align: top;
+    text-align: center;
+}
+.product-description{
+    padding-top: 5px;
+    background: #eee;
+}
+.product-description h2{
+    color: #666;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 12px 8px 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.description-wrap img{
+    max-width: 100%;
+}
+
+/*btn cart*/
+.add-cart-btn,.buy-now-btn{
+    border-radius: 5px;
+}
+.add-cart-btn{
+    padding: 0;
+    width: 38%;
+    color: #EC5413;
+    background-color: #DCDCDC;
+    border: none;
+    height: 42px;
+    margin: 10px 0 10px 12px;
+    line-height: 42px;
+    font-size: 16px;
+}
+.buy-now-btn{
+    padding: 0;
+    width: 38%;
+    color: #fff;
+    background-color: #EA5413;
+    border: none;
+    height: 42px;
+    margin: 10px 0 10px 12px;
+    line-height: 42px;
+    font-size: 16px;
 }
