@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>website title</title>
     <!--public-->
     <link href="/appskin/assets/styles/common/common.css" rel="stylesheet">
@@ -12,7 +12,13 @@
     <link href="/appskin/assets/styles/pages/index.css" rel="stylesheet">
 </head>
 <body>
-<div class="advert" style="height:130px;background:#eee; text-align:center; line-height: 130px;">advertise</div>
+<div class="advert">
+    <ul class="bx-slider">
+        <li><a href="#"><img class="img-responsive" src="assets/images/slider/slider-1.jpg"></a></li>
+        <li><a href="#"><img class="img-responsive" src="assets/images/slider/slider-2.jpg"></a></li>
+        <li><a href="#"><img class="img-responsive" src="assets/images/slider/slider-3.jpg"></a></li>
+    </ul>
+</div>
 <div class="row">
     <div class="search-bar">
         <form action="#" class="inline-form-group">
@@ -120,5 +126,16 @@
     <a href="#"><i class="icon icon-sm icon-cart"></i><span>购物车</span></a>
     <a href="#"><i class="icon icon-sm icon-account"></i><span>个人中心</span></a>
 </div>
+<script src="assets/js/libs/jquery-1.11.1.min.js"></script>
+<script src="assets/js/libs/jquery.bxslider.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".bx-slider").bxSlider({
+            auto: true,
+            controls: false,
+            pager: false
+        });
+    });
+</script>
 </body>
 </html>
