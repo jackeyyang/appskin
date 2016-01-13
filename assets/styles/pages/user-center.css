@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.user-figure{
+    background:#4fc1e9);
+}
+.user-figure-pic{
+    margin: 20px auto;
+    width: 40%;
+    text-align: center;
+}
+.user-figure-pic span{
+    display: block;
+}
+.user-figure-pic .pic{
+    margin: 10px auto;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    border-radius: 130px;
+}

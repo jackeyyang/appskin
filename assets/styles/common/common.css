@@ -153,6 +153,12 @@ button{
     overflow: hidden;
 }
 
+
+.only-has-footer{
+    padding-bottom: 70px;
+}
+
+
 /*inline-form-group*/
 .form-control input,.form-group .form-control-i{
     border: 1px solid #ccc;
