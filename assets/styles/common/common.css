@@ -65,6 +65,9 @@ body{
 .bg-c{
     background-color: #ececec;
 }
+.c-orange{
+    color: #ec652a
+}
 /*默认链接*/
 a{
     text-decoration: none;
@@ -169,6 +172,7 @@ button{
 .inline-form-group .form-control{
     overflow: hidden;
 }
+
 
 /*product list*/
 .box-shadow{

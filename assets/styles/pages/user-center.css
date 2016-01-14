@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 .user-figure{
-    background:#4fc1e9);
+    clear: both;
+    overflow: hidden;
+    background:#4fc1e9;
 }
 .user-figure-pic{
     margin: 20px auto;
@@ -18,9 +20,31 @@
     height: 130px;
     border-radius: 130px;
 }
-.info-item{
+.info-item,.book-info{
     border: 1px solid #cfcfcf;
 }
-.info-item.box-shadow,.book-info{
-    margin-bottom: 15px;
+.info-item.box-shadow,.book-info,.user-wallet{
+    padding:10px 15px;
+}
+.info-item.box-shadow .icon,.user-wallet .icon{
+    margin: 0 5px;
+}
+.mbot{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.book-info span,.user-wallet span{
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
+.user-wallet span{
+    width: 50%;
+}
+.book-info span{
+    width: 25%;
+}
+.book-info span i{
+    display: block;
+    margin: 0 auto;
 }
