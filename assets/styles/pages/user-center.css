@@ -18,3 +18,9 @@
     height: 130px;
     border-radius: 130px;
 }
+.info-item{
+    border: 1px solid #cfcfcf;
+}
+.info-item.box-shadow,.book-info{
+    margin-bottom: 15px;
+}
