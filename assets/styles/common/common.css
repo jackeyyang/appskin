@@ -183,7 +183,7 @@ button{
 }
 
 /*nav-footer*/
-.nav-footer{
+.nav-footer,.nav-footer-addCart{
     position: fixed;
     bottom: 0;
     left:0;
