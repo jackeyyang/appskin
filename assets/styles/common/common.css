@@ -225,6 +225,9 @@ button{
     border-bottom: 1px solid #cfcfcf;
     background-color: #e8e8e8;
 }
+.header .header-title{
+    color: #000;
+}
 .header a{
     display: block;
     margin: 9px auto 0;
