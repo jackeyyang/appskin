@@ -48,3 +48,8 @@
     display: block;
     margin: 0 auto;
 }
+
+/*shopping cart*/
+.btn-check{
+    margin: 10px;
+}
