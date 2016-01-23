@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>website title</title>
     <!--public-->
+    <link href="/appskin/assets/styles/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/appskin/assets/styles/common/common.css" rel="stylesheet">
     <link href="/appskin/assets/styles/common/icon.css" rel="stylesheet">
     <!--pages-->
@@ -16,7 +17,8 @@
    <div class="header-title text-center">新增收货地址</div>
 </div>
 <div class="has-header-wrap">
-    <div class="form-block">
+    <div class="col-xs-12" style="margin-top: 15px;">
+        <div class="form-block">
         <div class="form-group">
             <label>收货人</label>
             <input class="form-control-i" type="text">
@@ -27,11 +29,25 @@
         </div>
         <div class="form-group">
             <label>地区</label>
-            <input class="form-control-i" type="password" placeholder="密码">
+            <select>
+                <option>省</option>
+            </select>
+            <select>
+                <option>市</option>
+            </select>
+            <select>
+                <option>区</option>
+            </select>
         </div>
+            <div class="form-group">
+                <label>详细地址</label>
+                <input class="form-control-i" type="text">
+            </div>
         <div class="form-group">
-            <button class="btn btn-block btn-submit btn-primary" type="submit">登录</button>
+            <button class="btn btn-block btn-submit btn-primary" type="submit">保存</button>
+            <button class="btn btn-block btn-submit btn-default" type="submit">返回</button>
         </div>
+    </div>
     </div>
 </div>
 </body>

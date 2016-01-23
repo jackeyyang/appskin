@@ -26,8 +26,10 @@
 .info-item.box-shadow,.book-info,.user-wallet{
     padding:10px 15px;
 }
-.info-item.box-shadow .icon,.user-wallet .icon{
+.info-item.box-shadow .icon,.user-wallet .iconfont{
     margin: 0 5px;
+    font-size: 26px;
+    color: #ec652a;
 }
 .mbot{
     border-bottom: none;
@@ -41,15 +43,63 @@
 .user-wallet span{
     width: 50%;
 }
+.user-wallet span .c-orange{
+    font-weight: bold;
+}
 .book-info span{
     width: 25%;
 }
 .book-info span i{
     display: block;
     margin: 0 auto;
+    font-size: 26px;
 }
 
+.info-item .iconfont{
+    font-size: 26px;
+    color: #ec652a;
+}
+.info-item .fa-angle-right{
+    font-size: 25px;
+    color: #888;
+}
 /*shopping cart*/
 .btn-check{
     margin: 10px;
+}
+.nav-footer-addCart .roundedTwo{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.nav-footer-addCart .fl{
+    margin-top: 20px;
+}
+.row-cart{
+    position: relative;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #888;
+}
+.row-cart .roundedTwo{
+    position: absolute;
+    left:10px;
+    top: 41%;
+}
+.row-cart .pic{
+    margin-left: 35px;
+    width: 30%;
+}
+.detail-item-group{
+    margin-left: 10px;
+    width: 40%;
+    border-top:none;
+    padding-top: 0;
+}
+.detail-item-group h2{
+    font-size: 14px;
+}
+.row-cart .glyphicon-trash{
+    position: absolute;
+    right:10px;
+    top: 20%;
 }
