@@ -491,3 +491,12 @@ span.nav-cart-num {
     text-align: center;
     border: 1px solid #ccc;
 }
+
+.nav-footer-addCart span{
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    left:8px;
+    font-size: 24px;
+    color: #ec652a;
+}
